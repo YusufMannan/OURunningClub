@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Announcements</title>
+  <link rel="stylesheet" href="q2a.css">
+</head>
+<body>
+  <header>
+    <h1>OU Running Club</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Walk Events</a></li>
+        <li><a href="#">Other Events</a></li>
+        <li><a href="#">Memberships</a></li>
+        <li><a href="#">News Items</a></li>
+        <li><a href="#">Announcements</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <div class="container">
+      <div class="form-container">
+        <h2>Add Announcements</h2>
+        <form>
+          <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="POST">
+            <label for="sender">Sender's Name:</label>
+            <input type="text" id="sender" name="sender" required>
+      
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+      
+            <label for="announcement">Announcement Content:</label>
+            <textarea id="announcement" name="announcement" rows="5" required></textarea>
+      
+            <label for="sendingDate">Sending Date:</label>
+            <input type="date" id="sendingDate" name="sendingDate" required>
+      
+            <label for="attachment">Upload Attachment:</label>
+            <input type="file" id="attachment" name="attachment">
+      
+            <input type="submit" value="Submit" class="submit-button">
+          </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <a href="#">Home</a>
+    <a href="#">Walk Events</a>
+    <a href="#">Other Events</a>
+    <a href="#">Memberships</a>
+    <a href="#">News Items</a>
+    <a href="#">Announcemetn</a>
+  </footer>
+</body>
+</html>
