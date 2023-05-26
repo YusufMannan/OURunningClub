@@ -4,18 +4,12 @@
   <meta charset="UTF-8">
   <title>Announcements</title>
   <link rel="stylesheet" href="q2b.css">
-  <style>
-    body {
-      width: 1024px;
-      height: 768px;
-      transform: rotate(0deg);
-    }
-  </style>
+
 </head>
 <body>
   <header>
     <h1>OU Running Club</h1>
-    <img src="OpenUniversityLogo.png">
+    <img src="OpenUniversityLogo.png" alt="Open University Logo">
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -27,9 +21,9 @@
       </ul>
     </nav>
     <div class="login-container">
-      <input type="text" placeholder="Username">
-      <input type="password" placeholder="Password">
-      <input type="submit" value="Login">
+      <input type="text" placeholder="Username" aria-label="Username">
+      <input type="password" placeholder="Password" aria-label="Password">
+      <input type="submit" value="Login" aria-label="Login">
     </div>
   </header>
 
@@ -39,16 +33,16 @@
         <h2>Announcements</h2>
         <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="POST">
           <label for="sender">Sender's Name:</label>
-          <input type="text" id="sender" name="sender" required>
+          <input type="text" id="sender" name="sender" required aria-required="true">
     
           <label for="subject">Subject:</label>
-          <input type="text" id="subject" name="subject" required>
+          <input type="text" id="subject" name="subject" required aria-required="true">
     
           <label for="announcement">Announcement Content:</label>
-          <textarea id="announcement" name="announcement" rows="5" required></textarea>
+          <textarea id="announcement" name="announcement" rows="5" required aria-required="true"></textarea>
     
           <label for="sendingDate">Sending Date:</label>
-          <input type="date" id="sendingDate" name="sendingDate" required>
+          <input type="date" id="sendingDate" name="sendingDate" required aria-required="true">
     
           <label for="attachment">Upload Attachment:</label>
           <input type="file" id="attachment" name="attachment">
